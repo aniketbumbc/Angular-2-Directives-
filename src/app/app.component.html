@@ -4,7 +4,20 @@
 <p [ngClass]="{Bordernow:true}"> hello form class directives </p>
 <p [ngStyle]="{color:'blue'}"> hello look at style directives</p>
 
-<div class="div1" [ngClass]="{Divclass:true}" ></div>
+<div class="div1" [ngClass]="{Divclass:true}"></div>
 <hr>
 <h2 align="center"> Build Own Directives </h2>
-<div class="div1" appHighligt> hello direcives </div>
+<div class="div1" appHighligt> hello direcives</div>
+<hr>
+<h1> Structural Directives ngIf</h1>
+<div id="div1" *ngIf="switch"></div> <br>
+<button (click)="onclick()"> Cube Me</button>
+<br><br>
+<hr>
+<h1> Structural Directives ngfor</h1>
+<ul style="list-style-type:square">
+  <li *ngFor="let aarry of names">{{aarry}}</li>
+
+</ul>
+<br><br>
+<hr>
